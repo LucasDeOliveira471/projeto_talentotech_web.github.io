@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página HTML-Talento Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Meu Site!</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou Lucas de Oliveira, um desenvolvedor iniciante apaixonado por criar experiências incríveis na web.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Meus Serviços</h2>
+        <ul>
+            <li>Desenvolvimento de Sites</li>
+            <li>Back End</li>
+            <li>Design Gráfico</li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Preencha o formulário abaixo para entrar em contato comigo:</p>
+        
+        <!-- Formulário de Contato -->
+        <form action="processa_formulario.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu Nome" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Site. Talento Tech PR.</p>
+    </footer>
+</body>
+</html>
